@@ -1,0 +1,16 @@
+.filler{
+  height: 200px;
+  width: 75%;
+  margin: auto;
+  background-color: rgb(94, 94, 94);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  h1{
+    color: #ffffff;
+  }
+  @media (max-width: 550px){
+    width: 90%;
+  }
+}

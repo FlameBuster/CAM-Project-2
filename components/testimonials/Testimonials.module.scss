@@ -1,0 +1,51 @@
+.main {
+  margin-top: 5rem;
+  h2 {
+    margin: auto;
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 1rem;
+  }
+  // @media (max-width: 550px){
+  // }
+}
+
+.container {
+  margin: 1rem auto;
+  margin-top: 3rem;
+  padding: 1rem;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  span {
+    .arrow {
+      font-size: 30px;
+      background-color: rgb(200, 200, 200);
+      border-radius: 50%;
+    }
+  }
+  .item {
+    .img {
+      height: 90px;
+      width: 90px;
+      background-color: rgb(184, 184, 184);
+      border-radius: 50%;
+      margin: auto;
+    }
+    .author {
+      text-align: center;
+      margin-top: 1rem;
+      span {
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+      p {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+  @media (max-width: 550px) {
+    width: 100%;
+  }
+}

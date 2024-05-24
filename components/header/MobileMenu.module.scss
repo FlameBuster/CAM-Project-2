@@ -1,0 +1,13 @@
+.navContainer {
+  a {
+    text-decoration: none;
+    color: #000000;
+    li {
+      padding: 0.8rem;
+      list-style: none;
+      &:hover {
+        color: rgb(253, 75, 35);
+      }
+    }
+  }
+}

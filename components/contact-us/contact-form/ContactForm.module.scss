@@ -1,0 +1,53 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+
+  h2 {
+    margin: 2rem;
+    font-weight: 300;
+    letter-spacing: 7px;
+  }
+  .inputFields {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    div {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      input {
+        width: 49%;
+      }
+    }
+    input {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border: none;
+      background-color: #fff1f6;
+      &::placeholder {
+        color: #f5bacf;
+      }
+    }
+    button {
+      width: 100%;
+      border: 0px;
+      padding: 0.8rem 1rem;
+      background-color: #fb96b9;
+      font-weight: bold;
+    }
+  }
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.5rem;
+      text-align: center;
+      letter-spacing: 4px;
+    }
+    .inputFields {
+      width: 100%;
+    }
+  }
+}

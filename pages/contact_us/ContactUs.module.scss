@@ -1,0 +1,75 @@
+.mainContainer{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    h2{
+        font-weight: 400;
+        width: 50%;
+        text-align: center;
+        line-height: 50px;
+    }
+    .credentialsList{
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        border: 1px solid rgb(255, 105, 79);
+        padding: 2rem 1.5rem;
+        border-radius: 10px;
+        .item{
+            display: flex;
+            gap: 2.5rem;
+            align-items: baseline;
+            img{
+                width: 40px;
+            }
+            a{
+                text-decoration: none;
+                font-size: 1.2rem;
+                color: rgb(70, 70, 70);
+                p{
+                    font-size: 1.2rem;
+                     color: rgb(70, 70, 70);
+                }
+            }
+        }
+
+    }
+    @media (max-width: 550px){
+        padding: 1rem;
+        h2{
+            width: 90%;
+            font-size: 1.45rem;
+            text-align: center;
+            line-height: 35px;
+            color: rgba(0, 0, 0, 0.789);
+        }
+        .credentialsList{
+            
+            gap: 1.5rem;
+            .item{
+                gap: 1.8rem;
+                img{
+                    width: 28px;
+                }
+                a{
+                    font-size: 1rem;
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.map{
+    margin-top: 2rem;
+    img{
+        width: 100%;
+    }
+
+}

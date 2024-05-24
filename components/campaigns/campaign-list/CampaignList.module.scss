@@ -1,0 +1,33 @@
+.container{
+    position: relative;
+    span{
+        font-size: 1.1rem;
+        background-color: rgb(255, 179, 0);
+        border-radius: 10px;
+        padding: 0.5rem;
+        position: relative;
+        top: -6px;
+    }
+    .hotBanner{
+        color: red;
+
+    }
+    .content{
+        color: #000000ab;
+    }
+    @media (max-width: 550px){
+        .content{
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.hotFlag {
+    animation: blinker 2s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
