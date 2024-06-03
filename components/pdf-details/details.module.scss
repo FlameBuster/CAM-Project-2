@@ -1,0 +1,87 @@
+.materialDetailsContainer {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 800px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.materialDetailsHeader {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  color: #333;
+}
+
+.materialDetailsContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.detailColumn {
+  flex: 1;
+  min-width: 300px;
+}
+
+.detailRow {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.detailRow label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #007bff;
+}
+
+.detailRow span {
+  color: #333;
+  padding: 8px 12px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.detailRow ul {
+  padding-left: 20px;
+  color: #333;
+}
+
+.detailRow ul li {
+  list-style: none;
+  margin-bottom: 5px;
+  padding: 8px 12px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.detailRow ul li::before {
+  content: "• ";
+  color: #007bff;
+}
+
+.buttonContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 10px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}

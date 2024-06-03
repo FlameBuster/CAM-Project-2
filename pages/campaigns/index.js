@@ -1,15 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Banner from "../../components/campaigns/banner/Banner";
 import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/header/Navbar";
 import styles from "./Campaigns.module.scss";
+import MaterialDetails from "../../components/pdf-details/details";
 
 function Campaigns({ files }) {
-  const [selectedPdf, setSelectedPdf] = useState(null);
+  const [selectedPdfData, setSelectedPdfData] = useState(null);
 
+  // Function to fetch PDF data from MongoDB based on file ID
+  const fetchPdfData = async (id) => {
+    try {
+      const response = await axios.get(
+        `http://localhost:8080/pdf/data/fetch/${id}`
+      );
+      
+      const mergedProps = {
+        ...response.data.metadata, // Spread existing metadata properties
+        _id: id // Add _id property with the provided id value
+      };
+
+      setSelectedPdfData(mergedProps);
+      
+    } catch (error) {
+      console.error("Error fetching PDF data:", error);
+    }
+  };
+
+  // Function to handle click event on file link
   const handlePdfClick = (id) => {
-    window.open(`http://localhost:8080/pdf/fetch/${id}`, "_blank");
+    fetchPdfData(id);
+    // Fetch PDF data when a file link is clicked
   };
 
   return (
@@ -51,6 +73,19 @@ function Campaigns({ files }) {
               ))}
             </ul>
           </section>
+          {/* Render MaterialDetails component if PDF data is fetched */}
+          {console.log(selectedPdfData)}
+          {selectedPdfData && (
+  <MaterialDetails
+    materialNo={selectedPdfData.metadata.materialNo}
+    Accession_number={selectedPdfData.metadata.Accession_number}
+    Location={selectedPdfData.metadata.Location}
+    Page_no={selectedPdfData.metadata.Page_no}
+    No_of_copies={selectedPdfData.metadata.No_of_copies}
+    Remarks={selectedPdfData.metadata.Remarks}
+    _id={selectedPdfData._id}
+  />
+)}
         </div>
       </main>
       <Footer />
@@ -69,7 +104,6 @@ export async function getStaticProps() {
     }));
   } catch (error) {
     console.error("Error fetching files:", error);
-    // Handle error fetching data, you might want to provide some fallback or default behavior
   }
 
   return {

@@ -35,10 +35,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/gallery.js"
     ],
-    "/upload": [
+    "/uploadImg": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/upload.js"
+      "static/chunks/pages/uploadImg.js"
     ]
   },
   "ampFirstPages": []
