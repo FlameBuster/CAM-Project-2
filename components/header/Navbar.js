@@ -26,7 +26,7 @@ function Navbar() {
               <li>About Us</li>
             </a>
           </Link>
-          <Link href="/campaigns">
+          <Link href="/archives">
             <a>
               <li>Archives</li>
             </a>
@@ -36,9 +36,19 @@ function Navbar() {
               <li>Gallery</li>
             </a>
           </Link>
-          <Link href="">
+          <Link href="/videoGallery">
             <a>
-              <div className={styles.contriBtn}>Login</div>
+              <li>Video Gallery</li>
+            </a>
+          </Link>
+          <Link href="/upload">
+            <a>
+              <div className={styles.contriBtn}>Upload</div>
+            </a>
+          </Link>
+          <Link href="/delete">
+            <a>
+              <div className={styles.contriBtn}>Delete</div>
             </a>
           </Link>
           <Link href="/contact_us">

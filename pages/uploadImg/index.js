@@ -7,12 +7,12 @@ export default function UploadImage() {
   const [description, setDescription] = useState("");
   const [division, setDivision] = useState("");
   const [newDivision, setNewDivision] = useState("");
-  const [divisions, setDivisions] = useState([]); // Initialize with an empty array
-  const [message, setMessage] = useState(null); // State for success or error message
-  const [isLoading, setIsLoading] = useState(false); // State for loading
+  const [divisions, setDivisions] = useState([]); 
+  const [message, setMessage] = useState(null); 
+  const [isLoading, setIsLoading] = useState(false); 
 
   useEffect(() => {
-    // Fetch existing divisions from the server
+    
     fetch("http://localhost:8080/divisions")
       .then((response) => response.json())
       .then((data) => {

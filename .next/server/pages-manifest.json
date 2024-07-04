@@ -1,8 +1,12 @@
 {
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/uploadImg": "pages/uploadImg.js",
+  "/_error": "pages/_error.js",
+  "/Login": "pages/Login.js",
+  "/upload": "pages/upload.js",
+  "/delete": "pages/delete.js",
+  "/": "pages/index.js",
   "/gallery": "pages/gallery.js",
-  "/campaigns": "pages/campaigns.js"
+  "/archives": "pages/archives.js",
+  "/contact_us": "pages/contact_us.js"
 }

@@ -1,0 +1,116 @@
+.upload-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  
+    .toggle-buttons {
+      display: flex;
+      margin-bottom: 20px;
+  
+      button {
+        padding: 10px 20px;
+        margin: 0 10px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #ffffff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+  
+        &.active {
+          background-color: #0056b3;
+        }
+  
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+  
+  .upload-container,
+  .upload-pdf-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  
+    h2 {
+      text-align: center;
+      margin-bottom: 24px;
+      font-size: 24px;
+      font-weight: 600;
+      color: #333;
+    }
+  
+    .message {
+      text-align: center;
+      margin-bottom: 24px;
+      font-size: 18px;
+      color: #d9534f;
+    }
+  
+    form {
+      .form-group {
+        margin-bottom: 24px;
+  
+        label {
+          display: block;
+          font-size: 16px;
+          font-weight: 600;
+          color: #007bff;
+          margin-bottom: 8px;
+        }
+  
+        input,
+        textarea,
+        select {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ced4da;
+          border-radius: 8px;
+          font-size: 16px;
+          transition: border-color 0.3s ease;
+  
+          &:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+          }
+        }
+  
+        textarea {
+          resize: vertical;
+        }
+      }
+  
+      .submit-button {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        background-color: #007bff;
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: #0056b3;
+        }
+  
+        &:disabled {
+          background-color: #007bff;
+          opacity: 0.65;
+        }
+      }
+    }
+  }
+  

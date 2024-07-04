@@ -5,12 +5,15 @@ import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/header/Navbar";
 import Location from "../../components/map/Map";
 import styles from "./ContactUs.module.scss";
+import Ribbon from "../../components/ribbon/Ribbon";
 
 function ContactUs() {
   return (
     <React.Fragment>
       <Navbar />
+    
       <main>
+      
         <Banner path={"/images/army47.webp"} heading={"Join INDIAN ARMY"} />
         <section className={styles.mainContainer}>
           <h2>If you would like to join us .</h2>
@@ -41,9 +44,7 @@ function ContactUs() {
               <div className={styles.icon}>
                 <img src={"/images/insta.png"} alt="icon" />
               </div>
-              <a href="">
-                cme
-              </a>
+              <a href="">cme</a>
             </div>
             {/* <div className={styles.item}>
               <div className={styles.icon}>

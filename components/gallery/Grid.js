@@ -12,7 +12,9 @@ function Grid() {
   useEffect(() => {
     const fetchDivisions = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/divisions");
+        const response = await axios.get(
+          "http://localhost:8080/image/divisions"
+        );
         setDivisions(response.data);
       } catch (error) {
         console.error("Error fetching divisions:", error);
@@ -26,7 +28,7 @@ function Grid() {
       if (selectedDivision !== null) {
         try {
           const response = await axios.get(
-            `http://localhost:8080/divisions/${selectedDivision}`
+            `http://localhost:8080/image/divisions/${selectedDivision}`
           );
           setImageIds(response.data);
         } catch (error) {

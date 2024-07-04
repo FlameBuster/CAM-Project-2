@@ -1,0 +1,23 @@
+.file-list-container {
+  padding: 20px;
+}
+
+.message {
+  margin-bottom: 20px;
+  color: green;
+}
+
+.file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
